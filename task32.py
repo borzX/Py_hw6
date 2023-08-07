@@ -11,13 +11,13 @@ min_num = 33
 max_num = 200
 
 
-def takeClosest(sp, min_num, max_num):
-    closest = sorted(sp)
+def closest(sp, min_num, max_num):
+    sp_sorted = sorted(sp)
     sp1 = []
-    for i in closest:
+    for i in sp_sorted:
         if i >= min_num and i<=max_num:
             sp1.append(i)   
     indices = [sp.index(i) for i in sp1]     
     return indices
 
-print(takeClosest(sp, min_num, max_num))
+print(closest(sp, min_num, max_num))

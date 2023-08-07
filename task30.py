@@ -9,5 +9,6 @@ def progresia(start, step, len):
         temp_list.append(num)
         num=step+num      
     return temp_list
+
         
 print(progresia(start, step, len))
