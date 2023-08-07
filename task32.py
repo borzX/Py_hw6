@@ -6,8 +6,7 @@
 # max_num = int(input("Введите значение максимума: "))
 
 
-
-sp = [ 1, 5, 88, 100, 150, 300, 2, -4]
+sp = [ 1, 5, 88, 100, 2, -4]
 min_num = 33
 max_num = 200
 
@@ -18,8 +17,7 @@ def takeClosest(sp, min_num, max_num):
     for i in closest:
         if i >= min_num and i<=max_num:
             sp1.append(i)   
-    indices = [sp.index(i) for i in sp1]
-    
-        
-            
+    indices = [sp.index(i) for i in sp1]     
     return indices
+
+print(takeClosest(sp, min_num, max_num))
